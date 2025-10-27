@@ -1,0 +1,35 @@
+{
+  "name": "repro",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "react-router build",
+    "preview": "npm run build && vite preview --host"
+  },
+  "dependencies": {
+    "@react-router/dev": "^7.9.4",
+    "@supabase/supabase-js": "^2.76.1",
+    "isbot": "^5.1.31",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router": "^7.9.4",
+    "vite": "npm:rolldown-vite@7.1.20"
+  },
+  "pnpm": {
+    "overrides": {
+      "vite": "npm:rolldown-vite@7.1.20"
+    },
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp",
+      "workerd"
+    ]
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.13.15"
+  }
+}
