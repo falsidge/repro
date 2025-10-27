@@ -20,7 +20,7 @@
     "vite": "npm:rolldown-vite@7.1.20"
   },
   "stackblitz": {
-    "startCommand": "pnpm install && pnpm run preview"
+    "startCommand": "pnpm run preview"
   },
   "pnpm": {
     "overrides": {
